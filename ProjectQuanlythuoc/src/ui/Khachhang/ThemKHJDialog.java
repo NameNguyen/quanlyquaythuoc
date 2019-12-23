@@ -178,6 +178,7 @@ public class ThemKHJDialog extends JDialog implements ActionListener{
 		String ten = txtTenKH.getText().trim();
 		String sdt = txtSDT.getText().trim();
 		String diachi = txaDiachi.getText().trim();
+		System.out.println(diachi);
 		if(valid(ten, sdt, diachi)== true) {
 			Khachhang kh = new Khachhang(ma, ten, sdt, diachi);
 			if(khachhang_DAO.taoKhachhang(kh) == true) {
